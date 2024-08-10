@@ -122,7 +122,7 @@ def predict(args: argparse.Namespace):
                 for i, mask in enumerate(masks):
                     output_path = save_dir_binary / f"{image_path.stem}_mask_{i}.jpg"
                     cv2.imwrite(str(output_path), np.uint8(mask["segmentation"]) * 255)
-                    
+                
                 # Color
                 output          = np.ones((masks[0]["segmentation"].shape[0], masks[0]["segmentation"].shape[1], 4))
                 output[:, :, 3] = 0
