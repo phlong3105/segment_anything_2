@@ -3,12 +3,12 @@ hostname    : ~
 config      : ~
 arch        : "sam2"
 model       : "sam2_hiera_l"
-data        : ~
+data        : "sa_v"
 data_dir    : ~
 root        : ~
 project     : ~
 variant     : ~
-fullname    : ~
+fullname    : "sam2_hiera_l_sa_v"
 save_dir    : ~
 weights     : "zoo/vision/segment/sam2/sam2_hiera_l/sa_v/sam2_hiera_l_sa_v.pt"
 device      : 0
