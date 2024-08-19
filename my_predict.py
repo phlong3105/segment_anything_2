@@ -110,9 +110,12 @@ def predict(args: argparse.Namespace):
                 total       = len(data_loader),
                 description = f"[bright_yellow] Predicting"
             ):
+                # Input
                 image      = datapoint.get("image")
                 meta       = datapoint.get("meta")
                 image_path = mon.Path(meta["path"])
+                
+                # Infer
                 timer.tick()
                 masks = mask_generator.generate(image)
                 timer.tock()
